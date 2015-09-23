@@ -54,6 +54,7 @@ class Main extends Sprite {
 			game = cast (mStarling.root, StarlingGame);
 			game.start();
 		});
+		mStarling.start();
 	}
 
 	/** Log function so we can see traces in the console if we're testing in the browser */
