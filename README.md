@@ -1,5 +1,7 @@
-haxe-as3-starling-test A quick test to see if haxe can work with a Starling swc, targeting flash.
-=================================================================================================
+haxe-as3-starling-test
+======================
+
+A quick test to see if haxe can work with a Starling swc, targeting flash.
 
 It's a haxe openfl project, so to run it you need to... * Make sure you have
 haxe and openfl installed * Edit line 20 of `project.xml` so that it points to
