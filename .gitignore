@@ -1,0 +1,5 @@
+Export/flash/haxe
+Export/flash/obj
+Export/flash/bin/assets
+Export/flash/bin/starlingtest.swf
+.build

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="Starling Test" package="com.test.starlingtest" version="1.0.0" company="Me" />
+	<app main="Main" path="Export" file="starlingtest" />
+
+    <!-- WINDOW -->
+    <window background="#888888" fps="30" />
+    <window width="360" height="640" hardware="true" if="flash"/>
+
+    <!-- PATHS -->
+	<source path="src" />
+    <assets path="Assets" rename="assets" />
+
+    <!-- HAXE LIBS -->
+	<haxelib name="openfl" />
+ 
+    <!-- AIR -->
+    <haxeflag name="-swf-version" value="17" />
+    <haxeflag name="-swf-lib-extern" value="/Volumes/Strongheart/Users/mikko/codelibrary/as3/air_sdk_17.0.0.172/frameworks/libs/air/airglobal.swc" />
+
+    <!-- STARLING -->
+    <!-- We need a patch to ignore haxe compiler's confusion over static and instance methods having the same name -->
+    <haxeflag name="--macro patchTypes('Starling.patch')" />
+    <haxeflag name="-swf-lib" value="libs/starling1.7.swc"/>
+
+</project>
